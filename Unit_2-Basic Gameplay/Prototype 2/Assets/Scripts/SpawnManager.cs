@@ -26,7 +26,11 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.S)) {
 
+            SpawnRandomAnimal();
+
+        }
     }
 
     void SpawnRandomAnimal() {
@@ -34,9 +38,9 @@ public class SpawnManager : MonoBehaviour
         int animalIndex = Random.Range(0, animalPrefabs.Length);
 
         //Randomly generate animal index and spawn position
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnpos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
 
-        Instantiate(animalPrefabs[animalIndex], spawnPos, 
+        Instantiate(animalPrefabs[animalIndex], spawnpos, 
             animalPrefabs[animalIndex].transform.rotation);
 
     }

@@ -2012,6 +2012,8 @@ GameObject:
   - component: {fileID: 9097420107872916552}
   - component: {fileID: 7011627493755455686}
   - component: {fileID: 4589550539258455876}
+  - component: {fileID: 6317177367413217443}
+  - component: {fileID: -2247641989155290246}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -2027,8 +2029,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9166630253245105805}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.9929841, z: 0, w: 0.11824808}
-  m_LocalPosition: {x: -0.14, y: 0, z: 15.9}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 12}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2039,7 +2041,7 @@ Transform:
   - {fileID: 4133063173141327660}
   - {fileID: 3150573682554234618}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -166.418, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &9097420107872916552
 Animator:
   serializedVersion: 5
@@ -2084,5 +2086,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de90953c0baafe14dbb9f7c4aba96996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6317177367413217443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9166630253245105805}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.959058, y: 39.362568, z: 45.492245}
+  m_Center: {x: 0.43446305, y: 19.181292, z: 4.7745776}
+--- !u!114 &-2247641989155290246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9166630253245105805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2e9a0c917078d4eb76d3bac6db6ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

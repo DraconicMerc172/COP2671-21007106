@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     public float horizontalInput;
@@ -23,9 +23,14 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
 
-        if (transform.position.x < xRange) {
+        horizontalInput = Input.GetAxis("Horizontal");
 
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+
+
+        if (transform.position.x < -xRange) {
+
+            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
 
         }
 
@@ -34,10 +39,6 @@ public class NewBehaviourScript : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
 
         }
-
-        horizontalInput = Input.GetAxis("Horizontal");
-
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
         if (Input.GetKeyDown(KeyCode.Space)) {
 
