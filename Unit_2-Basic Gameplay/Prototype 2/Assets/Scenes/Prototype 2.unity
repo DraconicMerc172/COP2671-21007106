@@ -608,6 +608,54 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 350013084}
   m_SourcePrefab: {fileID: 100100000, guid: 6f52b946693e54048af74f5cd6ba49f8, type: 3}
+--- !u!1 &1508081015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1508081017}
+  - component: {fileID: 1508081016}
+  m_Layer: 0
+  m_Name: Spawn_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1508081016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508081015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eae967cb5f0b8041a0537a83738a0f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 3379062801438049202, guid: 973f936547c89a248a678199150d87ea, type: 3}
+  - {fileID: 9166630253245105805, guid: 2ff448ece38a1eb4a8c93adcc534e193, type: 3}
+  - {fileID: 7093506991585350516, guid: 3d38769690004894caf2f1747f4bb9f7, type: 3}
+--- !u!4 &1508081017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508081015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +973,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7011627493755455686, guid: 2ff448ece38a1eb4a8c93adcc534e193, type: 3}
+      propertyPath: speed
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 9166630253245105805, guid: 2ff448ece38a1eb4a8c93adcc534e193, type: 3}
       propertyPath: m_Name
       value: Animal_Horse_Black
@@ -1007,3 +1059,4 @@ SceneRoots:
   - {fileID: 7466957920214363541}
   - {fileID: 2722320202311703122}
   - {fileID: 1975425469}
+  - {fileID: 1508081017}
