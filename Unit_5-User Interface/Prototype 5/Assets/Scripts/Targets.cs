@@ -49,11 +49,16 @@ public class NewBehaviourScript : MonoBehaviour
     private void OnMouseDown() 
     {
 
-        Destroy(gameObject);
+        if (gameManager.isGameActive) 
+        {
 
-        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+            Destroy(gameObject);
 
-        gameManager.UpdateScore(pointValue);
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+
+            gameManager.UpdateScore(pointValue);
+
+        }
 
     }
 
@@ -61,6 +66,13 @@ public class NewBehaviourScript : MonoBehaviour
     {
 
         Destroy(gameObject);
+
+        if (!gameObject.CompareTag("Bad")) 
+        {
+
+            gameManager.GameOver();
+
+        }
 
     }
 
