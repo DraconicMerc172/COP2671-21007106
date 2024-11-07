@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
 
     public float xRange = 10;
 
-    public GameObject arrowPrefab;
+    public GameObject ArrowPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +44,7 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space)) {
 
-            Instantiate(arrowPrefab, transform.position, arrowPrefab.transform.rotation);
+            Instantiate(ArrowPrefab, transform.position, ArrowPrefab.transform.rotation);
 
         }
 
